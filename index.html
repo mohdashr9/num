@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Guess the Number Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="openPopup()">Open Popup</button>
+    <div id="popup" class="popup">
+        <div class="popup-content">
+            <h2>Enter Your Name</h2>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button onclick="submitName()">Submit</button>
+            <button onclick="closePopup()">Close</button>
+        </div>
+    </div>
+    
+    <div id="notification" class="notification"></div>
+
+    <h1 class="title">Guess the Number</h1>
+    <label for="guessInput">Enter a number between 0 and 20:</label>
+    <input type="number" id="guessInput" min="0" max="20">
+    <button onclick="checkGuess()">Check</button>
+    <p id="result"></p>
+    <h2 class="score">Score: <span id="score">0</span></h2>
+    <button onclick="shareResult()">Share Result</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
